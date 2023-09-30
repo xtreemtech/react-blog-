@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.content-block {
+    padding: 0;
+    position: relative;
+    
+  }
+  
+  .container-fluid {
+    width: 100%;
+  }
+  
+  .container-page-item-title {
+    background-color: #fff;
+    padding: 120px 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .page-item-title-single {
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; 
+  }
+  
+  .page-container {
+    padding: 20px;
+  }
+  
+  .entry-content {
+    margin-top: 20px;
+  }
+  
+  .article {
+    padding: 20px;
+  }
+  
+  .block-heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .block-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .block-column {
+    flex: 1 1 0;
+  }
+  
+  .block-column-is-layout-flow {
+    flex-flow: column nowrap;
+  }
+  
+  .block-separator {
+    margin: 20px 0;
+    border-top: 1px solid #e2e3e7;
+    border-bottom: none;
+    max-width: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+  }
+  
+  
+  .image-container {
+    height: 50%; 
+    width: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 10px;
+  }
+  
+  .text-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .text-overlay p {
+    font-size: 18px;
+  }
+  
+  .container-page-item-title.with-bg .page-item-title-single {
+    padding: 120px 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  

@@ -1,0 +1,31 @@
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #000000;
+  }
+
+  .block-columns{
+    gap: 2rem;
+  }
+
+  .block-heading .p{
+    flex-grow: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  p {
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.block-column-p {
+    text-align: center;
+}

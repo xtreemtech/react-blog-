@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+
+
+  .card {
+    width: 100%;
+    max-width: 400px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.card-image {
+    position: relative;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card-image img {
+  height: 100%;
+  min-height: 250px;
+    width: 100%;
+    transition: transform 0.3s;
+    border-radius: 5px;
+}
+
+.card-image:hover img {
+    transform: scale(1.1);
+}
+
+
+.zoom-button {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background-color: rgba(6, 99, 6, 0.89);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card-title a:hover {
+  color: green;
+}
+
+.card-date {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    font-weight: 600;
+}
+  
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 15px;
+    line-height: 24px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h1 {
+    font-size: 34px;
+    margin: 0 0 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h2 {
+    font-size: 26px;
+    margin: 0 0 15px;
   }
+
+  .btn.btn-primary {
+    padding: 9px 35px;
+  }
+
+
+  .hero-block .carousel-caption {
+    left: 7%;
+    right: 7%;
+  }
+
+  .hero-block .carousel-control {
+    width: 5%;
+  }
+
+  .hero-block p {
+    margin: 0 0 25px;
+  }
+
 }
+
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    .block {
+      padding: 40px 0 10px;
+    }
+  
+    .hero-block .carousel-caption {
+      display: none;
+    }
+  
+    .hero-block .carousel-control {
+      width: 15%;
+    }
+  
+  }

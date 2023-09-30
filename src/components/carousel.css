@@ -1,0 +1,109 @@
+
+.hero-block .carousel-item:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero-block .carousel-item img {
+    width: 100%;
+    height: 32rem;
+  }
+  
+  .hero-block .carousel-caption {
+    color: white !important; 
+    left: 25%;
+    right: 25%;
+    transform: translateY(50%);
+    bottom: 50%;
+  }
+  .carousel-caption h2 {
+    color: white !important; 
+  }
+  .hero-block p {
+    margin: 0 0 30px;
+  }
+
+  .desc-block {
+    display: block;
+    width: 400px;
+    color: #fcfcfc;
+  }
+
+  .carousel-control-prev-icon:before {
+    content: "<";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+  .carousel-control-prev-icon{
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  opacity: 1;
+  border: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+.carousel-control-next-icon {
+    background: transparent;
+  position: absolute;
+  top: 50%;
+  opacity: 1;
+  border: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+}
+.carousel-control-next-icon:before {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .hero-block .carousel-item {
+      height: 25rem;
+    }
+  
+    .hero-block .carousel-caption {
+      left: 10%;
+      right: 10%;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-block .carousel-caption {
+      display: block !important;
+    }
+  }
+  

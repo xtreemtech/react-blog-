@@ -1,0 +1,92 @@
+
+
+.footer {
+    background-color: #ffffff;
+    color: rgb(8, 8, 8);
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  
+  .footer-content {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-content h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-content p,
+  .footer-content address {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  
+  .Footer-social {
+    flex:1;
+  display: flex;
+  justify-content: flex-start;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 1px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .post-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .post-categories a {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+  }
+  
+  .post-categories a:hover {
+    background-color: black;
+  }
+  @media (max-width: 768px) {
+    .post-categories {
+      flex-direction: column;
+    }
+  }  
