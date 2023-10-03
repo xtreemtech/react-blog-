@@ -4,10 +4,10 @@ import React from "react";
 import Header from "./components/Header";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Carousel from "./components/carousel";
-import Homepage from './components/Homepage';
 import About from './components/About';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Cards from './components/Cards';
 
 
 
@@ -17,7 +17,7 @@ const Home = () => {
     <>
     <Carousel />
       <Header />
-      <Homepage/>
+      <Cards/>
       <Footer/>
     </>
   );

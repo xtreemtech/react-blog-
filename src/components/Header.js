@@ -1,32 +1,41 @@
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
-import "./Header.css";
-import image from "../assets/Images/DynamoTech.png";
 import React, { useState } from "react";
+import logo from "../assets/Images/DynamoTech.png";
+import "./Header.css";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { BiSearch } from "react-icons/bi";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div className="Header">
+    <header className="header">
       <nav>
- 
-      <div className="menu-toggle">
-          <button onClick={toggleMenu}>
-          <i className="fas fa-bars"></i>
-          </button>
+        <div className="nav_left">
+          <div className="toggle_div" onClick={toggleMenu}>
+            <GiHamburgerMenu
+              width="40.44px"
+              height="50px"
+              className="menu-icon"
+            />
+          </div>
+          <img
+            src={logo}
+            alt="logo"
+            width="150px"
+            height="150px"
+            className="logo"
+          />
         </div>
 
-        <div className="logo">
-          <img src={image} className="img-logo" alt="" />
-        
-        </div>
-        <ul className={`menu ${isOpen ? 'open' : ''}`}>
+        <div className="nav_lists">
+          <ul>
           <li>
             <NavLink to="/" >
               Home
@@ -42,34 +51,52 @@ const Header = () => {
               Contact
             </NavLink>
           </li>
-        </ul>
+          </ul>
+        </div>
 
-        <div className="nav-right">
-          <ul className="social-icon">
-            <li>
-              <a href="#">
-                <FaFacebook className="facebook" />
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">
-                <FaTwitter className="twitter" />
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">
-                <FaLinkedin className="linkedin" />
-              </a>
-            </li>
-          </ul>
-          <a class="search-toggle-btn" aria-label="Search toggle"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <div className="socials nav_right">
+          <Link to="#">
+            <button className="box">
+              <FaFacebookF className="icon" />
+            </button>
+          </Link>
+
+          <Link to="#">
+            <button className="box">
+              <FaTwitter className="icon" />
+            </button>
+          </Link>
+
+          <Link to="#">
+            <button className="box">
+              <FaLinkedinIn className="icon" />
+            </button>
+          </Link>
+
+          <div className="socials_search">
+            <Link to="#">
+              <button className="box">
+                <BiSearch className="search" />
+              </button>
+            </Link>
+          </div>
         </div>
       </nav>
-    </div>
+      {/* <div className={`nav_items ${isOpen ? "open" : ""}`}> */}
+      <div className="nav_items">
+        <ul className={`nav_item ${isOpen ? "open" : ""}`}>
+          <li>
+            <NavLink to="#home">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="#about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="#contact">Contact</NavLink>
+          </li>
+        </ul>
+      </div>
+    </header>
   );
 };
 

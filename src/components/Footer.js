@@ -1,71 +1,80 @@
-
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";import React from "react";
+import React from "react";
 import "./Footer.css";
+import logo from "../assets/Images/DynamoTech.png";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const categories = ["Green Hydrogen", "Smart technology", "Solar Energy", "Sustainable building"];
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-content">
-        <p><img class="wp-image-548" src="https://dynamotechtrends.com/wp-content/uploads/2023/09/cropped-DynamoTech_white-removebg.png" alt="" width="150" height="auto" /></p>
-          <h2>About Us</h2>
-          <p>
-          Discover the latest in solar energy and technology on our blog. Explore innovations, trends, and the path to a cleaner future powered by the sun.
-          </p>
-          <p>© Copyright 2023 built and managed by <a target="_blank" rel="noopener">Chinonso Kalu</a></p>
+    <footer>
+      <div className="footer_left">
+        <h3>PAGES</h3>
+        <h4 className="footer_top_p">About Dynamo Tech Trends</h4>
+        <h4 className="footer_top_p2">Contact us</h4>
+      </div>
+      <div className="footer_middle">
+        <h3>FOLLOW US</h3>
+
+        <div className="footer_socials">
+          <div className="footer_socials_links">
+            <Link to="#">
+              <button className="box">
+                <FaFacebookF className="icon" />
+              </button>
+            </Link>
+
+            <Link to="#">
+              <button className="box">
+                <FaTwitter className="icon" />
+              </button>
+            </Link>
+
+            <Link to="#">
+              <button className="box">
+                <FaLinkedinIn className="icon" />
+              </button>
+            </Link>
+          </div>
         </div>
 
-        <div className="footer-content">
-          <h2>PAGES</h2>
-          <div className="Footer-page">
- <address>
-            Email: <a href="mailto:info@example.com">info@example.com</a>
-            <br />
-            Phone: <a href="tel:+123456789">+1 (234) 567-89</a>
-          </address>
-          </div>
-         
-        </div>
-        <div className="footer-content">
-          <h2>CATEGORIES</h2>
-          <div className="post-categories">
-      {categories.map((category) => (
-        <a href="#" key={category}>{category}</a>
-      ))}
-    </div>
-        </div>
-
-        <div className="footer-content">
-        <h2>Follow Us</h2>
-          <div className="Footer-social">
-        <ul className="social-icon">
-            <li>
-              <a href="#">
-                <FaFacebook className="facebook" />
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">
-                <FaTwitter className="twitter" />
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">
-                <FaLinkedin className="linkedin" />
-              </a>
-            </li>
-          </ul>
-          </div>
+        <div className="btn">
+          <Link>
+            <button className="btn_primary">SUBCRIBE</button>
+          </Link>
         </div>
       </div>
 
-      <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} Your Website Name. All Rights Reserved.
+      <div className="footer_middle2">
+        <h3>CATEGORIES</h3>
+        <div className="category_link">
+          <a href="#green">GREEN HYDROGEN</a>
+          <a href="#smart">SMART TECHNOLOGY</a>
+          <a href="#solar">SOLAR ENERGY</a>
+          <a href="#sustain">SUSTAINABLE BUILDING</a>
+        </div>
+      </div>
+      <div className="footer_bottom">
+        <img
+          src={logo}
+          alt="logo"
+          className="footer_logo"
+          width="150px"
+          height="150px"
+        />
+        <div className="footer_bottom_p">
+          <p className="bottom_p1">
+            Discover the latest in solar energy and technology on our blog.
+            Explore innovations, trends, and the path to a cleaner future
+            powered by the sun.
+          </p>
+          <p>
+            © Copyright 2023 built and managed by{" "}
+            <a href="kalu" target="_blank" rel="noopener">
+              DANIEL
+            </a>{" "}
+          </p>
+        </div>
       </div>
     </footer>
   );
