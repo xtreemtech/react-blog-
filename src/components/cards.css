@@ -87,7 +87,6 @@
     .cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
-  
       margin-right: 15px;
       padding-right: 15px;
       padding-left: 15px;

@@ -10,8 +10,6 @@ import Contact from './components/Contact';
 import Cards from './components/Cards';
 
 
-
-
 const Home = () => {
   return (
     <>

@@ -4,9 +4,9 @@ import Header from "./Header";
 
 const About = () => {
   return (
-    
-    <div className="about">
+     <>
       <Header/>
+    <div className="about">
       <div className="img">
         <div className="about_title">
           <h1>About Dynamo Tech Trend</h1>
@@ -114,6 +114,7 @@ const About = () => {
         </div>
       </article>
     </div>
+    </>
   );
 };
 
